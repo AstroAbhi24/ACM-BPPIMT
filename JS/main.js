@@ -1,11 +1,12 @@
-const parallax1 = document.getElementById("parallax1");
+const parallax = document.getElementById("section3");
 const headerEl = document.querySelector('.header');
 let lastScrollTop = 0;
+
 
 window.addEventListener("scroll", function()
 {
     let offset = window.pageYOffset;
-    parallax1.style.backgroundPositionX = offset*(-0.3)-100 + "px";
+    parallax.style.backgroundPositionY = offset*(0.2)-400 + "px";
 })
 
 window.addEventListener('scroll', () => {
