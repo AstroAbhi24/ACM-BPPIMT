@@ -35,3 +35,18 @@ function activeMenu() {
 }
 activeMenu();
 window.addEventListener('scroll', activeMenu);
+
+// splash screen 
+
+function hideSplashScreen() {
+    const splashScreen = document.querySelector('.splash-screen');
+    const mainContent = document.querySelector('.main-content');
+  
+    splashScreen.style.display = 'none';
+    mainContent.style.display = 'block';
+  }
+  
+  // Add a timer for the splash screen (set to 3 seconds in this example)
+  const splashScreenDuration = 3500; // milliseconds (3 seconds)
+  
+  setTimeout(hideSplashScreen, splashScreenDuration);
