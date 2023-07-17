@@ -1,0 +1,364 @@
+/* FONTS AND TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+.normal{
+    font-weight: normal;
+}
+
+/* CSS VARIABLES */
+:root{
+    --primary-color:#14ACDD;
+    --primary-gray:#ffffff;
+    --primary-dark:#212121;
+    --primary-blue:#9ec9e9;
+    --primary-color-trans: #14abddaf;
+}
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+body{
+    background-color: var(--primary-gray);
+}
+
+.random-section{
+    width: 100vw;
+    background-color:var(--primary-gray);
+}
+
+.another-section{
+    background-color:var(--primary-gray);
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.icon{
+    height: 30px;
+}
+
+.logo{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    animation: fade-down 0.5s .4s backwards;
+}
+
+.header{
+    transform: translate(0);
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-gray);
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.header-hide{
+    /* transform: translateY(-50px);
+    opacity: 0; */
+}
+
+.header-scrolled{
+    background-color: var(--primary-gray);
+    color: var(--primary-color);
+}
+
+.links{
+    animation: fade-down 0.5s .4s backwards;
+    display: flex;
+    column-gap: 10px;
+}
+
+.link-items{
+    border-radius: 5px;
+    padding: 7px 10px;
+    list-style: none;
+    --c:5px;  /* the cube perspective */
+  
+  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+  
+  border: solid transparent;
+  border-width:0 var(--c) var(--c) 0;
+  background:
+    linear-gradient(  45deg,transparent var(--g),rgba(255,255,255,0.6) 0) right  /var(--c) 100%,
+    linear-gradient(-135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c);
+  background-repeat:no-repeat;
+  background-origin:border-box;
+  transition:0.3s,background-color 0.3s 0.3s,color 0.3s 0.3s;
+  transform:translate(calc(var(--c)/1),calc(var(--c)/1));
+  clip-path: 
+    polygon(calc(100% - var(--c)) 0%, calc(100% - var(--c)) 0%, 
+    0% 0%, 
+    0% calc(100% - var(--c)),0% calc(100% - var(--c)),
+    calc(100% - var(--c)) calc(100% - var(--c)),
+    calc(100% - var(--c)) calc(100% - var(--c)));
+}
+
+.active{
+    transition:0.3s 0.3s,background-color 0.3s,color 0.3s;
+    background-color:var(--primary-color);
+    color:#fff;
+    transform:translate(0,0);
+    clip-path: 
+      polygon(100% var(--c), calc(100% - var(--c)) 0%, 
+      0% 0%, 
+      0% calc(100% - var(--c)), var(--c) 100%, 
+      100% 100%,
+      100% 100%);
+}
+
+.author{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-size: contain;
+    animation: fade-up 0.5s .4s backwards;
+}
+
+/* =================HOME SECTION======================= */
+
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/Assets/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+#section1 p{
+    width: 30vw;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#ACM-BPPIMT-logo{
+height: 200px;
+}
+
+
+@media (max-width:700px){
+
+    #section1{
+        height: 60vh;
+    }
+
+    .header .links{
+        display: none;
+        justify-content: left;
+    }
+
+    #ACM-BPPIMT-logo{
+        height: 150px;
+    }
+
+    #section1 p{
+        width: 70vw;
+    }
+}
+
+/* ====================ABOUT ACM SECTION====================== */
+
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    height: 90vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: var(--primary-blue); /* Set the text color on top of the video */
+    text-align: center; /* You can adjust the text alignment as needed */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    background-color: var(--primary-color-trans);
+    color: white;
+    flex-direction: column;
+}
+
+.content h1{
+    font-size: 30px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 18px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-blue);
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+@media (max-width:700px){
+
+    .video-container{
+        height: 60vh;
+    }
+
+    .content h1{
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .content p{
+        width: 90%;
+        font-size: 15px;
+    }
+}

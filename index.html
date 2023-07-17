@@ -23,8 +23,75 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/Assets/icons/favicon.ico">
 
+    <!-- Linking to CSS Files -->
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/universal.css">
+
 </head>
 <body>
-    
+
+     <!-- header -->
+     <header class="header">
+        <div class="logo">
+            <img src="/Assets/icons/android-chrome-192x192.png" alt="icon" class="icon">
+            <span class="bold"><a href="/index.html">ACM-BPPIMT Student Chapter</a></span>
+        </div>
+        <ul class="links">
+            <li class="link-items">
+                <a href="#section1" class="link" rel="noopener noreferrer">
+                    Home
+                </a>
+            </li>
+            <li class="link-items">
+                <a href="#section2" class="link" rel="noopener noreferrer">
+                    About
+                </a>
+            </li>
+            <li class="link-items">
+                <a href="#section3" class="link" rel="noopener noreferrer">
+                    Join Us
+                </a>
+            </li>
+        </ul>
+
+    </header>
+    <!-- header ends -->
+
+    <!-- section -->
+    <section class="random-section section" id="section1">
+        <img src="/Assets/acm_bppimt_logo_big.png" id="ACM-BPPIMT-logo">
+        <p>A thriving community of passionate computer enthusiasts. Let's shape the future of computing together!</p>
+    </section>
+    <!-- section ends -->
+
+    <section class="section" id="section2">
+        <div class="video-container">
+            <video autoplay loop muted playsinline id="background-video">
+                <source src="https://firebasestorage.googleapis.com/v0/b/chuck-842bb.appspot.com/o/June%202023%20CACM_%20Should%20Robots%20Have%20Rights%20or%20Rites_.mp4?alt=media&token=1ddba458-98a5-4342-b345-707c29508e1f" type="video/mp4">
+                <!-- Add additional video sources for different formats if needed -->
+            </video>
+            <div class="content">
+                
+                <h1>Welcome to the ACM Student Chapter at BPPIMT!</h1>
+                <p>Join us for exciting tech events, learning opportunities, and a thriving community of passionate computer enthusiasts. Click here to learn more about Association of Computing Machinery (ACM)</p>
+                <a href="https://www.acm.org" target="_blank">
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                      </button>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--JS scripts -->
+    <script src="/JS/main.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
