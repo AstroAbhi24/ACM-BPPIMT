@@ -432,4 +432,10 @@ footer{
     .upperfooter{
         flex-direction: column;
     }
+    .address{
+        width: 100%;
+    }
+    .footer-links{
+        width: 100%;
+    }
 }
