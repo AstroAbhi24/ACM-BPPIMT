@@ -6,7 +6,7 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", function()
 {
     let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset*(0.3)-700 + "px";
+    parallax.style.backgroundPositionY = offset*(0.15)-700 + "px";
 })
 
 window.addEventListener('scroll', () => {
