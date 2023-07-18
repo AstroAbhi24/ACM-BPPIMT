@@ -26,7 +26,7 @@
 }
 @media (max-width:700px){
   .section{
-    padding-inline: 15px;
+    padding-inline: 20px;
   }
 }
 
@@ -902,6 +902,7 @@ a{
     animation: fade-down 0.5s .4s backwards;
 }
 
+
 .header{
     transform: translate(0);
     opacity: 1;
@@ -916,10 +917,6 @@ a{
     z-index: 1;
 }
 
-.header-hide{
-    /* transform: translateY(-50px);
-    opacity: 0; */
-}
 
 .header-scrolled{
     background-color: var(--primary-gray);
@@ -933,6 +930,7 @@ a{
 }
 
 .link-items{
+  width: auto;
     border-radius: 5px;
     padding: 7px 10px;
     list-style: none;
@@ -979,6 +977,31 @@ a{
     animation: fade-up 0.5s .4s backwards;
 }
 
+#menu-icon{
+  height: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:700px){
+  #menu-icon{
+    display: block;
+  }
+  .logo{
+    display: none;
+  }
+  .links{
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 20px;
+    display: none;
+  }
+  .link-items{
+    width: 100vw;
+  }
+}
+
+
 /* =================HOME SECTION======================= */
 
 #section1{
@@ -1009,10 +1032,6 @@ height: 200px;
         height: 60vh;
     }
 
-    .header .links{
-        display: none;
-        justify-content: left;
-    }
 
     #ACM-BPPIMT-logo{
         height: 150px;
@@ -1175,7 +1194,7 @@ button {
   }
 
   .card{
-    background-color: white;
+    background-color: red;
     flex: 1;
     height: 100%;
     border-radius: 20px;
@@ -1198,6 +1217,21 @@ button {
     background-size: cover;
   }
 
+  .location{
+    width: 90%;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .location iframe{
+    width: 100%;
+    height: 100%;
+  }
+
 @media (max-width:700px){
 
     .video-container{
@@ -1218,6 +1252,10 @@ button {
       flex-direction: column;
       flex: none;
       height: 140vw;
+    }
+
+    .location{
+      height: 60vw;
     }
     
 }
