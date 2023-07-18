@@ -21,6 +21,16 @@
     font-weight: normal;
 }
 
+.section{
+  padding-inline: 150px;
+}
+@media (max-width:700px){
+  .section{
+    padding-inline: 20px;
+  }
+}
+
+
 /* CSS VARIABLES */
 :root{
     --primary-color:#14ACDD;
@@ -1020,6 +1030,8 @@ height: 200px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .video-container {
@@ -1155,6 +1167,37 @@ button {
     color: #fff;
    }
 
+  .cards{
+    display: flex;
+    height: 32vw;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .card{
+    background-color: red;
+    flex: 1;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 1s;
+  }
+
+  .card:hover{
+    box-shadow: 0 0 25px var(--primary-color);
+  }
+
+  .team-members{
+    background-image: url(/Assets/team-member-bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .upcoming-events{
+    background-image: url(/Assets/upcoming-events-bg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
 @media (max-width:700px){
 
     .video-container{
@@ -1163,13 +1206,20 @@ button {
 
     .content h1{
         font-size: 25px;
-        width: 80%;
+        width: 95%;
     }
 
     .content p{
         width: 90%;
         font-size: 15px;
     }
+
+    .cards{
+      flex-direction: column;
+      flex: none;
+      height: 140vw;
+    }
+    
 }
 
 /* =======================CONTACT US SECTION======================= */
