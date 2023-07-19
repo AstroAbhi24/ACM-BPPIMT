@@ -26,7 +26,7 @@
 }
 @media (max-width:700px){
   .section{
-    padding-inline: 20px;
+    padding-inline: 15px;
   }
 }
 
@@ -902,7 +902,6 @@ a{
     animation: fade-down 0.5s .4s backwards;
 }
 
-
 .header{
     transform: translate(0);
     opacity: 1;
@@ -917,16 +916,14 @@ a{
     z-index: 1;
 }
 
-
-.header-scrolled{
-  background-color: white;
-    color: var(--primary-color);
+.header-hide{
+    /* transform: translateY(-50px);
+    opacity: 0; */
 }
 
-@media(max-width: 700px){
-  .header-scrolled{
-    background-color: transparent;
-  }
+.header-scrolled{
+    background-color: var(--primary-gray);
+    color: var(--primary-color);
 }
 
 .links{
@@ -936,7 +933,6 @@ a{
 }
 
 .link-items{
-  width: auto;
     border-radius: 5px;
     padding: 7px 10px;
     list-style: none;
@@ -983,31 +979,6 @@ a{
     animation: fade-up 0.5s .4s backwards;
 }
 
-#menu-icon{
-  height: 32px;
-  cursor: pointer;
-  display: none;
-}
-
-@media(max-width:700px){
-  #menu-icon{
-    display: block;
-  }
-  .logo{
-    display: none;
-  }
-  .links{
-    flex-direction: column;
-    background-color: #333;
-    border-radius: 20px;
-    display: none;
-  }
-  .link-items{
-    width: 100vw;
-  }
-}
-
-
 /* =================HOME SECTION======================= */
 
 #section1{
@@ -1038,6 +1009,10 @@ height: 200px;
         height: 60vh;
     }
 
+    .header .links{
+        display: none;
+        justify-content: left;
+    }
 
     #ACM-BPPIMT-logo{
         height: 150px;
@@ -1200,7 +1175,7 @@ button {
   }
 
   .card{
-    background-color: red;
+    background-color: white;
     flex: 1;
     height: 100%;
     border-radius: 20px;
@@ -1259,11 +1234,10 @@ button {
       flex: none;
       height: 140vw;
     }
-
+    
     .location{
       height: 60vw;
     }
-    
 }
 
 /* =======================CONTACT US SECTION======================= */

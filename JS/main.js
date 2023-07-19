@@ -1,24 +1,8 @@
 const parallax = document.getElementById("section3");
 const headerEl = document.querySelector('.header');
-document.addEventListener("DOMContentLoaded", function () {
-    var menuIcon = document.getElementById("menu-icon");
-    var links = document.getElementById("links");
+let lastScrollTop = 0;
 
-    // Show links and hide menu icon when the menu icon is clicked
-    menuIcon.addEventListener("click", function () {
-        links.style.display = "block";
-        menuIcon.style.display = "none";
-    });
 
-    // Hide links and show menu icon when a link is clicked
-    links.addEventListener("click", function (event) {
-        // Check if the clicked element is a link
-        if (event.target.tagName === "A") {
-            links.style.display = "none";
-            menuIcon.style.display = "block";
-        }
-    });
-});
 window.addEventListener("scroll", function()
 {
     let offset = window.pageYOffset;

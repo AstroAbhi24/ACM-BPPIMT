@@ -73,8 +73,8 @@
             <img src="/Assets/icons/android-chrome-192x192.png" alt="icon" class="icon">
             <span class="bold"><a href="/index.html">ACM-BPPIMT Student Chapter</a></span>
         </div>
-        <ul class="links" id="links">
-            <li class="link-items" id="link-items">
+        <ul class="links">
+            <li class="link-items">
                 <a href="#section1" class="link" rel="noopener noreferrer">
                     Home
                 </a>
@@ -90,8 +90,6 @@
                 </a>
             </li>
         </ul>
-
-        <img src="/Assets//icons/menu.png" alt="menu" id="menu-icon">
 
     </header>
     <!-- header ends -->
@@ -137,26 +135,26 @@
     <!-- about section ends  -->
 
     <!-- contact us section starts  -->
-    <section class="contact-us">
+    <form class="contact-us" action="https://formspree.io/f/mbjvlgvq" method="POST">
         <h2>Send your Feedback!</h2>
         <p>We really appreciate them 😊</p>
         <div class="contact-us1">
             <div class="inputGroup input-name">
-                <input type="text" required="" autocomplete="on">
+                <input type="text" required autocomplete="off" name="Name">
                 <label for="name">Name</label>
             </div>
             <div class="inputGroup input-email">
-                <input type="email" required="" autocomplete="on">
+                <input type="email" required autocomplete="off" name="Email">
                 <label for="Email">Email</label>
             </div>
         </div>
         <div class="contact-us2">
             <div class="inputGroup input-message">
-                <input type="text" required="" autocomplete="off">
+                <input type="text" required autocomplete="off" name="Message">
                 <label for="Message">Message</label>
             </div>
 
-            <button>
+            <button type="submit">
                 <div class="svg-wrapper-1">
                   <div class="svg-wrapper">
                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +166,7 @@
                 <span>Send</span>
               </button>
         </div>
-    </section>
+    </form>
     <!-- contact us section ends  -->
 
     <!-- join us section starts -->
@@ -178,6 +176,7 @@
                 <span class="title">Become an ACM Member</span>
                 <div>
                     <p>Joining ACM means you dare to be the best computing professional you can be.  It means you believe in advancing the computing profession as a force for good.</p>
+                    <span>Become a Student Member</span> <span>$19/-</span>
                 </div>
                 <a href="https://services.acm.org/public/qj/quickjoin/qj_control.cfm?promo=PWEBTOP&form_type=Student">
                     <button>
