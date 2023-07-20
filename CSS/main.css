@@ -1035,6 +1035,7 @@ height: 200px;
 }
 
 .video-container {
+  margin-top: 10px;
     position: relative;
     width: 90%;
     height: 90vh;
@@ -1193,6 +1194,7 @@ button {
   }
 
   .upcoming-events{
+    cursor: pointer;
     background-image: url(/Assets/upcoming-events-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -1233,6 +1235,7 @@ button {
       flex-direction: column;
       flex: none;
       height: 140vw;
+      cursor: pointer;
     }
     
     .location{
