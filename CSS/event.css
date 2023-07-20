@@ -173,6 +173,9 @@ a{
 }
 
 .all-events{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: 35%;
     padding-top: 40px;
 }
@@ -221,6 +224,7 @@ a{
         padding-top: 0;
         width: 90%;
         margin: auto;
+        margin-top: 50px;
     }
 
 }
