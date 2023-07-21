@@ -90,9 +90,13 @@ function errData(err){
 }
 
 
-const parallax = document.getElementById("section3");
-const headerEl = document.querySelector('.header');
+const headerEl = document.getElementById('header');
 let lastScrollTop = 0;
+window.addEventListener("scroll", function()
+{
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset*(0.15)-700 + "px";
+})
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
         headerEl.classList.add('header-scrolled');
@@ -108,9 +112,4 @@ window.addEventListener('scroll', () => {
     }
     lastScrollTop = scrollTop;
 });
-
-window.addEventListener("scroll", function()
-{
-    let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset*(0.15)-700 + "px";
-})
+window.addEventListener('scroll', activeMenu);
