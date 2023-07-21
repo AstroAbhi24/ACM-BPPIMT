@@ -142,8 +142,15 @@ a{
     color: #212121;
     font-weight: bold;
 }
+.title{
+    padding-top: 80px;
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+
+}
 .member-list{
-    padding-top: 100px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,6 +174,14 @@ a{
 .name{
     margin-top: 10px;
     font-weight: bold;
+}
+.connect{
+    margin-top: 5px;
+    font-size: 12px;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 @media(max-width:700px){
     .member-list{
@@ -252,6 +267,7 @@ footer{
     background-color: #212121;
     padding: 30px;
     display: flex;
+    font-size: 18px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
