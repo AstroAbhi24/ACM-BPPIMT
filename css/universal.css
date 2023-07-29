@@ -32,6 +32,9 @@ html {
 nav {
     position: fixed;
     width: 100%;
+    z-index: 1;
+    background-color: var(--primary-bg);
+    box-shadow: 0 0 5px var(--primary-blue);
 }
 
 nav i {
