@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACM-BPPIMT</title>
+    <meta name="description"
+        content="Welcome to the ACM Student Chapter at BPPIMT! Join us for exciting tech events, learning opportunities, and a thriving community of passionate computer enthusiasts. Let's shape the future of computing together!">
+    <meta name="keywords"
+        content="ACM Student Chapter, BPPIMT, Computing Community, Tech Events, Computer Science, Technology Enthusiasts, Learning Opportunities, Networking, Workshops, Student Activities, Professional Development, Computer Programming, Innovation, Coding, Student Engagement, ACM Membership, Technology Trends, Computer Education, Industry Speakers, Computing Projects">
+    <meta name="author" content="Archak Nath">
+
+    <!-- Social Media Meta Tags (Optional but recommended for better sharing) -->
+    <meta property="og:title" content="ACM-BPPIMT">
+    <meta property="og:description"
+        content="Welcome to the ACM Student Chapter at BPPIMT! Join us for exciting tech events, learning opportunities, and a thriving community of passionate computer enthusiasts. Let's shape the future of computing together!">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="https://www.your-website-url.com">
+    <meta name="twitter:card"
+        content="Welcome to the ACM Student Chapter at BPPIMT! Join us for exciting tech events, learning opportunities, and a thriving community of passionate computer enthusiasts. Let's shape the future of computing together!">
+    <meta name="twitter:title" content="Exciting Tech Event: ACM Student Chapter Launch">
+    <meta name="twitter:description"
+        content="Join us for the grand launch of the ACM Student Chapter at BPPIMT. Explore tech workshops, networking opportunities, and much more! #ACM #TechEvents #BPPIMT">
+    <meta name="twitter:image" content="https://example.com/images/acm-launch-event.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/icons/favicon.ico">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="/css/universal.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <div class="splash-screen" id="splash-screen">
+        <span>Loading is in progress</span>
+        <h1 id="loader-counter">'72</h1>
+        <div class="loader-container">
+            <div class="loader" id="loader"></div>
+        </div>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+        <nav class="nav animate__animated animate__fadeInDown">
+
+            <i class="fa-solid fa-bars" id="hamberg" onclick="menu_clicked()"> ACM BPPIMT</i>
+
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill="#ffd43b">
+                            <circle r="5" cy="12" cx="12"></circle>
+                            <path
+                                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                            </path>
+                        </g>
+                    </svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                        </path>
+                    </svg></span>
+                <input type="checkbox" class="input" id="myCheckbox">
+                <span class="slider"></span>
+            </label>
+            <ul class="nav-list ">
+                <li>Home</li>
+                <li>Events</li>
+                <li>Join Us</li>
+            </ul>
+        </nav>
+
+
+        <div class="welcome">
+            <div class="welcome-text animate__animated animate__fadeInLeft">
+                <h1>ACM BPPIMT<br>Student Chapter</h1>
+                <p>A thriving community of passionate computer enthusiasts. Let's shape the future of computing
+                    together!</p>
+            </div>
+            <img src="asset/DrawKit_0007_ Education_Illustration_Pack/DrawKit - Education Illustration Pack/PNG/7 SCENE.png"
+                alt="" class="welcome-img animate__animated animate__fadeInRight">
+        </div>
+
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="asset/videoplayback.mp4" type="video/mp4">
+                <!-- Add other video formats for cross-browser compatibility if needed -->
+            </video>
+            <div class="content">
+                <img src="asset/acm-logo.png" alt="">
+                <img src="asset/acm_bppimt_logo_big.png" alt="">
+                <img src="asset/bppimt-logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="about-acm animate__animated animate__fadeInUp">
+            <img src="asset/acm-blob.png" alt="ACM">
+            <div class="about-acm-text">
+                <h1>ABOUT ACM</h1>
+                <P>ACM stands for the Association for Computing Machinery. It is an international professional
+                    organization
+                    dedicated to advancing computing as a science and profession. ACM was founded in 1947 and is one of
+                    the
+                    oldest and most prestigious organizations in the field of computer science.</P>
+                <button id="acm-official" onclick="redirectToURL()">Visit ACM Official</button>
+            </div>
+        </div>
+
+        <section class="whats-new">
+            <div class="wrapper" id="wrapper">
+                <h1>Testimonials</h1>
+                <ul class="carousel" id="carousel">
+                    <li class="card">
+                        <h2>Archak Nath</h2>
+                        <p>
+                            "Being a part of the ACM student chapter at BPPIMT has been an incredible journey. The
+                            chapter provides a platform for students to engage in cutting-edge research, participate in
+                            coding competitions, and attend inspiring tech talks. It has truly enriched my academic and
+                            professional life."
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h2>Tamal Mazumdar</h2>
+                        <p>
+                            "The ACM student chapter at BPPIMT has a vibrant community of like-minded individuals
+                            passionate about computer science. Through various workshops and seminars, I have gained
+                            invaluable skills and insights that have complemented my classroom learning."
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h2>Abhishek Saha</h2>
+                        <p>
+                            "I am grateful for the networking opportunities provided by the ACM student chapter. It has
+                            allowed me to connect with industry professionals and researchers, opening doors to
+                            internships and future career prospects."
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h2>Sushovan Banik</h2>
+                        <p>
+                            "The chapter's events are not only educational but also a lot of fun! From hackathons to
+                            coding challenges, the ACM student chapter at BPPIMT fosters a spirit of camaraderie and
+                            healthy competition among its members."
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h2>Shreya Gupta</h2>
+                        <p>
+                            "The ACM student chapter's mentorship program has been instrumental in guiding me towards my
+                            research interests. The support from experienced mentors has motivated me to pursue advanced
+                            studies in computer science."
+                        </p>
+                    </li>
+                    <li class="card">
+                        <h2>Rashmika Mandana</h2>
+                        <p>
+                            "Being a part of the ACM student chapter has helped me build leadership and teamwork skills.
+                            I have had the opportunity to organize events, collaborate with peers, and make a positive
+                            impact on the student community."
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- contact us section starts  -->
+        <form class="contact-us" action="https://formspree.io/f/mbjvlgvq" method="POST">
+            <h2>Send your Feedback!</h2>
+            <p>We really appreciate them 😊</p>
+            <div class="contact-us1">
+                <div class="inputGroup input-name">
+                    <input type="text" required autocomplete="off" name="Name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="inputGroup input-email">
+                    <input type="email" required autocomplete="off" name="Email">
+                    <label for="Email">Email</label>
+                </div>
+            </div>
+            <div class="contact-us2">
+                <div class="inputGroup input-message">
+                    <input type="text" required autocomplete="off" name="Message">
+                    <label for="Message">Message</label>
+                </div>
+
+                <button type="submit">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send</span>
+                </button>
+            </div>
+        </form>
+        <!-- contact us section ends  -->
+
+
+        <!-- join us section starts -->
+        <section class="section" id="section3">
+            <div class="container">
+                <div class="box">
+                    <span class="title">Become an ACM Member</span>
+                    <div>
+                        <p>Joining ACM means you dare to be the best computing professional you can be. It means you
+                            believe in advancing the computing profession as a force for good.</p>
+                    </div>
+                    <a href="https://services.acm.org/public/qj/quickjoin/qj_control.cfm?promo=PWEBTOP&form_type=Student"
+                        target="_blank">
+                        <button>
+                            <span class="button_top"> Join Us
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- join us section ends  -->
+
+        <!-- footer starts -->
+        <footer class="site-footer">
+
+            <div class="upperfooter">
+                <div class="address">
+                    <h3>ACM BPPIMT</h3>
+                    <p>137, VIP Rd, Mali Bagan, Poodar Vihar, Poddar Vihar, Kolkata, West Bengal 700052</p>
+                    <p><strong>Email:</strong> bppimt.acm@gmail.com</p>
+                    <div class="social-links">
+                        <a href="">
+                            <img src="/asset/icons/twitter.png" alt="twitter" class="link twitter-link">
+                        </a>
+                        <a href="">
+                            <img src="asset/icons/linkedin.png" alt="linkedin" class="link linkedin-link">
+                        </a>
+                        <a href="">
+                            <img src="asset/icons/instagram.png" alt="instagram" class="link instagram-link">
+                        </a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="footer-links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="https://acm.org">ACM Official</a></li>
+                        <li><a href="/members.html">Core Members</a></li>
+                        <li><a
+                                href="https://services.acm.org/public/qj/quickjoin/qj_control.cfm?promo=PWEBTOP&form_type=Student">Become
+                                a member</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottomfooter">
+                <p>&copy; 2023 ACM Student Chapter at BPPIMT. All rights reserved.</p>
+                <p>Made with 💖 by <a href="https://www.linkedin.com/in/archak-nath-a682aa247/"><u>Archak Nath</u></a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- footer ends -->
+
+    </div>
+
+
+
+    <!-- JavaScript Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/7b12bcc245.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
