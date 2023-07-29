@@ -632,7 +632,7 @@ button:active .button_top {
 .contact-us h2 {
     text-align: center;
     font-size: 40px;
-    color: var(--primary-color);
+    color: var(--primary-blue);
     padding: 10px;
 }
 
@@ -656,7 +656,7 @@ button:active .button_top {
 .contact-us2 button {
     font-family: inherit;
     font-size: 20px;
-    background: royalblue;
+    background: var(--primary-blue);
     color: white;
     padding: 12px 17px;
     padding-left: 0.9em;
@@ -736,6 +736,7 @@ button:active .button_top {
     background-color: transparent;
     border-radius: 20px;
     width: 100%;
+    color: var(--primary-text);
 }
 
 .inputGroup label {
@@ -754,7 +755,7 @@ button:active .button_top {
     margin: 0em;
     margin-left: 1.3em;
     padding: 0.4em;
-    background-color: #FFF;
+    background-color: var(--primary-bg);
 }
 
 .inputGroup :is(input:focus, input:valid) {
