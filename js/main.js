@@ -40,6 +40,12 @@ function menu_clicked() {
     });
 }
 
+const li_options = document.querySelectorAll("nav ul li a");
+for (let i = 0; i < li_options.length; i++) {
+    const element = li_options[i];
+    element.addEventListener("click", menu_clicked);
+}
+
 //dark mode
 function updateCSSVariable() {
     const root = document.documentElement;

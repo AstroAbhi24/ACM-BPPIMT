@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -44,6 +45,13 @@ nav i {
     cursor: pointer;
 }
 
+nav ul li i{
+    height: 100%;
+    color: white;
+    margin: 5px;
+    margin-right: 10px;
+}
+
 nav ul {
     display: none;
 }
@@ -53,6 +61,10 @@ nav li {
     color: white;
     padding: 10px;
 
+}
+nav li a{
+    text-decoration: none;
+    color: white;
 }
 
 /* ==========PROGRESS BAR========== */
@@ -163,7 +175,7 @@ footer a{
 
 /* ==========REVEAL ANIMATION========== */
 
-.reveal{
+/* .reveal{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -173,4 +185,4 @@ footer a{
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
+  } */
