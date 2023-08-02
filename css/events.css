@@ -1,0 +1,13 @@
+/* ==========CSS VARIABLES========== */
+
+/* Primary */
+:root {
+    --primary-blue: #4174f6;
+    --primary-bg: #fff;
+    --primary-text: #212121;
+}
+
+html {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}

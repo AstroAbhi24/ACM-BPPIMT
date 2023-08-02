@@ -1,0 +1,100 @@
+/* Primary */
+:root {
+    --primary-blue: #4174f6;
+    --primary-bg: #fff;
+    --primary-text: #212121;
+}
+.section-m1{
+    margin-block: 40px;
+}
+.carousel{
+    padding-top: 50px;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    color: var(--primary-blue);
+    margin-block:40px;
+}
+
+p.description{
+    text-align: center;
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.section-m1{
+    width: 100%;
+}
+
+#core-member .members{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#core-member .card{
+    outline: none;
+    border: none;
+    padding:10px ;
+    position: relative;
+    width: calc(100%/3.5);
+    box-shadow: 2px 2px 4px rgba(0, 110, 255, .2);
+    transition: .2s ease;
+    border-radius: 10px;
+}
+#core-member .card .dp{
+    border-radius: 10px;
+}
+
+#core-member .card p{
+    margin-inline: auto;
+}
+
+#core-member .card:hover{
+    box-shadow: 2px 2px 4px rgba(0, 110, 255, .6);
+}
+
+#core-member .card .linkedin{
+    height: 45px;
+    padding: 10px;
+    background-color: var(--primary-blue);
+    opacity: .7;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    border-radius: 10px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+#core-member .linkedin:hover{
+    opacity: 1;
+}
+
+#core-member .card h3{
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media(max-width:700px){
+    #core-member .card{
+        width: calc(100%/2.2);
+    }
+    #core-member .card h3{
+        font-size: 20px;
+    }
+
+    #core-member .card p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    p.description{
+        padding-inline: 20px;
+    }
+}
