@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,49 +32,189 @@
     <link rel="stylesheet" href="/css/universal.css">
     <link rel="stylesheet" href="/css/events.css">
 </head>
+
 <body>
-    <div id="progressBarContainer">
-        <div id="progressBar"></div>
-    </div>
     <nav class="nav animate__animated animate__fadeInDown">
 
-        <i class="fa-solid fa-bars" id="hamberg" onclick="menu_clicked()"> ACM BPPIMT</i>
-
-        <label class="switch">
-            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <g fill="#ffd43b">
-                        <circle r="5" cy="12" cx="12"></circle>
-                        <path
-                            d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
-                        </path>
-                    </g>
-                </svg></span>
-            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                    <path
-                        d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
-                    </path>
-                </svg></span>
-            <input type="checkbox" class="input" id="myCheckbox">
-            <span class="slider"></span>
-        </label>
-        <ul class="nav-list ">
-            <li><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><i class="fa-solid fa-calendar-days"></i>Events</li>
-            <li><i class="fa-solid fa-people-group"></i>About Us</li>
-            <li><a href="https://services.acm.org/public/qj/quickjoin/qj_control.cfm?promo=PWEBTOP&form_type=Student" target="_blank"><i class="fa-solid fa-user-plus"></i>Join Us</a></li>
-        </ul>
+        <i class="fa-solid fa-xmark" id="hamberg" onclick="backToHome()"> ACM BPPIMT</i>
     </nav>
 
-    <div class="event-list">
+    <section id="section1">
         <ul>
-            <li>
-                
-            </li>
+            <li class="active" onclick="changeTab(0)">Upcoming Events</li>
+            <li onclick="changeTab(1)">Past Events</li>
         </ul>
-    </div>
+    </section>
+
+    <section id="section2">
+        <div class="event">
+            <div class="short-display">
+                <div class="date">
+                    <h1>16</h1>
+                    <h2>SEP</h2>
+                </div>
+                <div class="title">
+                    <h1> IOT BLOCKCHAIN FOR SECURITY</h1>
+                </div>
+            </div>
+            <div class="large-display">
+
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="short-display">
+                <div class="date">
+                    <h1>15</h1>
+                    <h2>DEC</h2>
+                </div>
+                <div class="title">
+                    <h1> RESEARCH PAPER PRESENTATION</h1>
+                </div>
+            </div>
+            <div class="large-display">
+
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="short-display">
+                <div class="date">
+                    <h1>8</h1>
+                    <h2>MAR</h2>
+                </div>
+                <div class="title">
+                    <h1> TECHNICAL TALK</h1>
+                </div>
+            </div>
+            <div class="large-display">
+
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="short-display">
+                <div class="date">
+                    <h1>10</h1>
+                    <h2>JUNE</h2>
+                </div>
+                <div class="title">
+                    <h1> BRAINSTORM QUIZ AND HACKATHON</h1>
+                </div>
+            </div>
+            <div class="large-display">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="event">
+            <div class="short-display">
+                <div class="date">
+                    <h1>22</h1>
+                    <h2>JULY</h2>
+                </div>
+                <div class="title">
+                    <h1> ACM BPPIMT STUDENT CHAPTER INAUGURATION</h1>
+                </div>
+                <img src="/asset/icons/drop-down.svg" alt="" height="30px" class="expand-icon">
+            </div>
+            <div class="large-display">
+                <img src="/asset/background/banner1.jpg" alt="" class="banner">
+                <h3>About the Seminar</h3>
+                <p>We are excited to announce the successful inauguration of the ACM Student Chapter at BPPIMT, marked
+                    by an insightful seminar on "Biometrics and Its Applications in Various Industries" featuring Prof.
+                    Khalid Saeed as our esteemed guest speaker.</p>
+                <div class="what-prof-said" style="display: flex;;align-items: center;">
+                    <div class="professor" style="width: fit-content; margin: auto;padding: 10px;">
+                        <img src="/asset/events/Khalid-Saeed.jpg" alt=""
+                            style="height: 150px; border-radius: 50%;margin:15px auto">
+                        <h4 style="text-align: center;">Prof. Dr. Khalid Saeed</h4>
+                    </div>
+                    <div class="said" style="width: fit-content;">
+                        <h3>Event Highlights</h3>
+                        <p>In this captivating seminar, Prof. Khalid Saeed, a distinguished expert in the field of
+                            biometrics,
+                            delved into the world of secure identity verification and authentication. The seminar
+                            provided an
+                            in-depth understanding of biometric technologies, exploring their underlying principles and
+                            advancements.</p>
+                    </div>
+                </div>
+                <h3>The ACM Student Chapter at BPPIMT</h3>
+                <p>With the successful inauguration of the ACM Student Chapter, we are thrilled to embark on a journey
+                    of learning, collaboration, and innovation. The chapter aims to provide a platform for students and
+                    faculty to explore emerging trends in computer science and technology.
+
+                    We express our sincere gratitude to Prof. Khalid Saeed for sharing his expertise and inspiring us
+                    with his profound knowledge on biometrics. We extend our heartfelt thanks to all the participants
+                    who made this event a resounding success.
+
+                    Stay tuned for more exciting events and initiatives by the ACM Student Chapter at BPPIMT. We are
+                    committed to fostering a thriving community of technology enthusiasts, providing opportunities for
+                    growth, and making a positive impact on society.</p>
+
+                <div class="gallery">
+                    <img src="/asset/events/inauguration1.jpg" alt="" class="img">
+                    <img src="/asset/events/inauguration2.jpg" alt="" class="img">
+                    <img src="/asset/events/inauguration3.jpg" alt="" class="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts -->
+    <footer class="site-footer">
+
+        <div class="upperfooter">
+            <div class="address">
+                <h3>ACM BPPIMT</h3>
+                <p>137, VIP Rd, Mali Bagan, Poodar Vihar, Poddar Vihar, Kolkata, West Bengal 700052</p>
+                <p><strong>Email:</strong> bppimt.acm@gmail.com</p>
+                <div class="social-links">
+                    <a href="">
+                        <img src="/asset/icons/twitter.png" alt="twitter" class="link twitter-link">
+                    </a>
+                    <a href="">
+                        <img src="/asset/icons/linkedin.png" alt="linkedin" class="link linkedin-link">
+                    </a>
+                    <a href="">
+                        <img src="/asset/icons/instagram.png" alt="instagram" class="link instagram-link">
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/events.html">Events</a></li>
+                    <li><a href="https://acm.org">ACM Official</a></li>
+                    <li><a href="/members.html">Core Members</a></li>
+                    <li><a
+                            href="https://services.acm.org/public/qj/quickjoin/qj_control.cfm?promo=PWEBTOP&form_type=Student">Become
+                            a member</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottomfooter">
+            <p>&copy; 2023 ACM Student Chapter at BPPIMT. All rights reserved.</p>
+            <p>Made with 💖 by <a href="https://www.linkedin.com/in/archak-nath-a682aa247/"><u>Archak Nath</u></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- footer ends -->
 
 
+
+    <script src="/js/main.js"></script>
     <script src="/js/universal.js"></script>
+    <script src="/js/events.js"></script>
     <script src="https://kit.fontawesome.com/7b12bcc245.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

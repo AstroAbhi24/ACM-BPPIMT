@@ -190,12 +190,12 @@ function updateCSSVariable() {
     if (checkbox.checked) {
         root.style.setProperty('--primary-bg', '#212121'); // Change to the desired background color when the checkbox is checked
         root.style.setProperty('--primary-text', '#fff'); // Change to the desired background color when the checkbox is checked
-        welcome[0].style.background = "url(/asset/dark-doodle.png)";
+        welcome[0].style.background = "url(/asset/background/dark-doodle.png)";
 
     } else {
         root.style.setProperty('--primary-bg', '#fff'); // Change to the default background color when the checkbox is not checked
         root.style.setProperty('--primary-text', '#212121'); // Change to the default background color when the checkbox is not checked
-        welcome[0].style.background = "url(/asset/light-doodle.png)"
+        welcome[0].style.background = "url(/asset/background/light-doodle.png)"
     }
     welcome[0].style.backgroundSize = "cover";
     welcome[0].style.backgroundPosition = "center";

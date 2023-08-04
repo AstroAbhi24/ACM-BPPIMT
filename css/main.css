@@ -86,7 +86,7 @@ button:nth-child(3) {
     display: flex;
     max-width: 1000px;
     margin-inline: auto;
-    background: url(/asset/light-doodle.png);
+    background: url(/asset/background/light-doodle.png);
     background-size: cover;
     background-position: center;
 }
@@ -392,7 +392,7 @@ video {
 /* =================JOIN US SECTION==================== */
 
 #section3 {
-    background-image: url(/asset/background2.jpg);
+    background-image: url(/asset/background/background2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

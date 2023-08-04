@@ -195,3 +195,7 @@ function updateProgressBar() {
 
 // Add an event listener to the "scroll" event to call the function when the user scrolls
 window.addEventListener("scroll", updateProgressBar);
+
+function backToHome(){
+    window.location.href = "/index.html"
+}

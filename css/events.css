@@ -11,3 +11,203 @@ html {
     background-color: var(--primary-bg);
     color: var(--primary-text);
 }
+
+#section1 {
+    padding-top: 80px;
+    margin-inline: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#section1 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-inline: auto;
+}
+
+#section1 ul li {
+    list-style: none;
+    border: 2px solid gainsboro;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: .2s ease;
+    color: gray;
+    cursor: pointer;
+}
+
+#section1 ul li.active,
+#section1 ul li:hover {
+    background-color: var(--primary-blue);
+    color: white;
+    border: 2px solid var(--primary-blue);
+}
+
+#section2{
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+#section2 .event{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+#section2 .event .short-display{
+    display: flex;
+}
+
+#section2 .event .short-display .date{
+    padding: 20px 30px;
+    background-color: gray;
+    width: fit-content;
+    transition: .5s ease;
+}
+
+#section2 .event .short-display .title{
+    width: fit-content;
+    padding: 20px;
+}
+
+#section2 .event .short-display .title h1{
+    width: fit-content;
+    font-size: 30px;
+}
+
+#section2 .event:hover .date{
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+#section2 .event .short-display .date h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+#section2 .event .short-display .date h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width:700px){
+    #section2 .event .short-display .title h1{
+        font-size: 20px;
+    }
+}
+
+#section3{
+    margin-inline: auto;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+#section3 .event{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+
+
+#section3 .event .short-display{
+    display: flex;
+    position: relative;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#section3 .event .short-display .date{
+    padding: 20px 30px;
+    background-color: gray;
+    width: fit-content;
+    transition: .5s ease;
+}
+
+#section3 .event .short-display .title{
+    width: fit-content;
+    padding: 20px;
+}
+
+#section3 .event .short-display .title h1{
+    width: fit-content;
+    font-size: 30px;
+}
+
+#section3 .event:hover .date{
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+#section3 .event .short-display .date h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+#section3 .event .short-display .date h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+#section3 .event .short-display .expand-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 10px;
+    transition: .2s ease;
+}
+
+#section3 .event .large-display{
+    padding: 10px;
+    display: none;
+}
+
+#section3 .event .large-display h3{
+    margin-block: 10px;
+}
+
+#section3 .event .large-display .banner{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media(max-width:700px){
+    #section3 .event .short-display .title h1{
+        font-size: 20px;
+    }
+    .what-prof-said{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+#section3 .gallery{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#section3 .gallery img{
+    height: 30vh;
+    width: calc(100%/3.1);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media(max-width:700px){
+    #section3 .gallery{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #section3 .gallery img{
+        width: 100%;
+    }
+}
